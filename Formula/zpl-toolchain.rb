@@ -5,13 +5,13 @@
 class ZplToolchain < Formula
   desc "ZPL II toolchain for parsing, validating, formatting, and printing Zebra labels"
   homepage "https://github.com/trevordcampbell/zpl-toolchain"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT OR Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/trevordcampbell/zpl-toolchain/releases/download/v0.1.15/zpl-aarch64-apple-darwin.tar.gz"
-      sha256 "deac28ed26c6f474feb9c483c8684c73384f5dcd67cb1f90f2819b5718738f75"
+      url "https://github.com/trevordcampbell/zpl-toolchain/releases/download/v0.1.16/zpl-aarch64-apple-darwin.tar.gz"
+      sha256 "dc7e72b717b52d3bd9f5e004ce67525c468edc5e587377adca13e11ff5f82f82"
     end
     on_intel do
       odie "zpl-toolchain does not provide a pre-built binary for Intel Mac. Use: cargo install zpl_toolchain_cli"
@@ -20,8 +20,8 @@ class ZplToolchain < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/trevordcampbell/zpl-toolchain/releases/download/v0.1.15/zpl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a72d3462930f8b634396a93c8de0c74dda945a6066dedb93ee3c3282895ee8f0"
+      url "https://github.com/trevordcampbell/zpl-toolchain/releases/download/v0.1.16/zpl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a26f69e0d0d82a4379a2493df064dee892fdc607ae6989f5630b34f810acc6f7"
     end
     on_arm do
       odie "zpl-toolchain does not provide a pre-built binary for Linux ARM64. Use: cargo install zpl_toolchain_cli"
